@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>ID CARDS INFO 2023-24</h2>
+  <label><span style="color: red">* Indicates required field</span></label>
+  <form action="/submit" method="POST">
+    <br />
+    <label>Full Name<span style="color: red">*</span></label>
+    <br />
+    <input type="text" placeholder="enter your name" id="name" name="name" required />
+    <br />
+    <label>Roll no.</label><label style="color: red">*</label>
+    <br />
+    <input type="number" placeholder="enter your roll number" id="roll" name="roll" required />
+    <br />
+    <label>Blood group</label><label style="color: red">*</label>
+    <br />
+    <input type="text" placeholder="enter your blood group" id="bloodgroup" name="bloodgroup" required />
+    <br />
+    <label>Date of Birth</label><label style="color: red">*</label>
+    <br />
+    <input type="date" id="dob" name="dob" required />
+    <br />
+    <label>Contact no.</label><label style="color: red">*</label>
+    <br />
+    <input type="number" placeholder="enter your phone number" id="phonenumber" name="phonenumber" required />
+    <br />
+    <label>Permanent Address</label><label style="color: red">*</label>
+    <br />
+    <input type="text" placeholder="enter your address" id="address" name="address" required />
+    <br />
+    <label>Hostelize?</label><label style="color: red">*</label>
+    <br />
+    <input type="radio" id="hostelite" name="hostelite?" value="Yes" />
+    <label for="hostelite">Yes</label>
+    <br />
+    <input type="radio" id="nonhostelite" name="hostelite?" value="No" />
+    <label for="hostelite">No</label>
+    <br />
+    <label>Signature(enter image)</label><label style="color: red">*</label>
+    <br />
+    <input type="file" accept="image/*" id="sign" name="signature" required />
+    <br />
+    <label>Photo(enter image)</label><label style="color: red">*</label>
+    <br />
+    <input type="file" accept="image/*" id="photo" name="photo" required />
+    <br /><br />
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
